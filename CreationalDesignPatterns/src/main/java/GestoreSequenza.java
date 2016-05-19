@@ -19,8 +19,5 @@ public class GestoreSequenza {
         }catch(IllegalArgumentException e){
             System.out.println( "Cannot add " + b + "to " + sequenza + "\n error:" + e.getMessage() );
         }
-
-
     }
-
 }
