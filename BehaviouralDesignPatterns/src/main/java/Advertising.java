@@ -16,6 +16,6 @@ public class Advertising extends  Playable {
 
     @Override
     public void Play() {
-        System.out.println( "Currently Playng the ADVERTISING : " + this.title );
+        System.out.println( "Currently Playing the ADVERTISING : " + this.title );
     }
 }

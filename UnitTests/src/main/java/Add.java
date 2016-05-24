@@ -16,6 +16,8 @@ public class Add extends Operator {
         leftHandSide.Execute();
         rightHandSide.Execute();
         result = new Operand( leftHandSide.getValue() + rightHandSide.getValue() );
+
+
     }
 
     @Override

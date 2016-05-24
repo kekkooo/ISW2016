@@ -16,6 +16,6 @@ public class Song extends Playable {
 
     @Override
     public void Play() {
-        System.out.println( "Currently Playng the SONG : " + this.title );
+        System.out.println( "Currently Playing the SONG : " + this.title );
     }
 }

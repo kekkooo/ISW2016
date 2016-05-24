@@ -30,7 +30,7 @@ public class ConsoleApplication {
         GestoreSequenza.getInstance().AggiungiBrano( giggi, nonDirgliMai );
 
         // this should throw an exception, we handle it inside AggiungiBrano
-        GestoreSequenza.getInstance().AggiungiBrano( giggi, anaconda );
+        //GestoreSequenza.getInstance().AggiungiBrano( giggi, anaconda );
 
 
         System.out.println( p );

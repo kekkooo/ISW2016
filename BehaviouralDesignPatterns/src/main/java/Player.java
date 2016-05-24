@@ -25,7 +25,7 @@ public class Player extends Observable {
         if(current.isPresent()){
             current.get().Play();
             // this is the observable part of ObserverPattern
-            // In java.util implementation you need to explicitely set that this object has changed
+            // In java.util implementation you need to explicitly set that this object has changed
             // and unset it after the notification to observers has been sent.
             this.setChanged();
             this.notifyObservers();

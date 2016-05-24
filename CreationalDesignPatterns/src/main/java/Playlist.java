@@ -9,7 +9,8 @@ public class Playlist extends SequenzaBrani {
 
     @Override
     public void addBrano(Brano b) {
-        if( b == null ) { throw new IllegalArgumentException(" brano cannot be null "); }
+        if( b == null ) {
+            throw new IllegalArgumentException(" brano cannot be null "); }
         this.brani.add(b);
     }
 

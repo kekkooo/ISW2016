@@ -2,6 +2,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
+import java.util.function.DoubleBinaryOperator;
+
 /**
  * Created by francescousai on 16/05/16.
  */
@@ -60,6 +62,33 @@ public class OperationsTest {
 
         sumAll.Execute();
         Assert.assertEquals( 18.0, sumAll.getValue(), 0.1 );
+    }
 
+    @Test
+    public void LambdaOnePLusOneEqualsTwoTest(){
+        LambdaOperator add = new LambdaOperator( one, one, ( x, y ) -> x + y );
+        add.Execute();
+        Assert.assertEquals( 2.0, add.getValue(), 0.1 );
+    }
+
+    @Test
+    public void LazyComplexExpressionTest(){
+
+        /*
+        DoubleBinaryOperator lambdaMul = (x,y) -> x * y;
+        DoubleBinaryOperator lambdaAdd = (x,y) -> x + y;
+        DoubleBinaryOperator lambdaDiv = (x,y) -> x / y;
+        DoubleBinaryOperator lambdaSub = (x,y) -> x - y;
+
+        LambdaOperator minusTwoTimesFour = new LambdaOperator( minustwo, four, lambdaMul );
+        LambdaOperator fourDivByTwo      = new LambdaOperator ( four, two, lambdaDiv );
+        LambdaOperator firstSum          = new LambdaOperator( minusTwoTimesFour, lambdaAdd,  );
+        LambdaOperator threeTimesTwo     = new LambdaOperator( three, two, lambdaMul );
+        LambdaOperator threeTimesTwoTimesFour = new LambdaOperator( threeTimesTwo, four, lambdaMul );
+        LambdaOperator sumAll            = new LambdaOperator( firstSum, threeTimesTwoTimesFour, lambdaAdd );
+
+        sumAll.Execute();
+        Assert.assertEquals( 18.0, sumAll.getValue(), 0.1 );
+        */
     }
 }

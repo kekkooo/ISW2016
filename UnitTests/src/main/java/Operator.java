@@ -8,7 +8,6 @@ import java.util.Optional;
 public abstract class Operator extends Expression {
     protected Expression leftHandSide, rightHandSide;
     protected Operand result = null;
-    protected Optional<Operand> optResult = Optional.empty();
 
     public Operator( Expression left, Expression right ){
 
